@@ -1,0 +1,31 @@
+{
+  "name": "U.S.E",
+  "version": "0.0.1",
+  "description": "a scene editor to make animations instantly",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/deepak1556/U.S.E.git"
+  },
+  "author": "robo",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/deepak1556/U.S.E/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-handlebars": "~0.5.10",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.4",
+    "grunt-contrib-jshint": "~0.6.4",
+    "grunt-contrib-mincss": "~0.3.2",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-contrib-clean": "~0.5.0",
+    "grunt-contrib-htmlmin": "~0.1.3",
+    "grunt-contrib-imagemin": "~0.3.0",
+    "grunt-contrib-livereload": "~0.1.2",
+    "grunt-bower-hooks": "~0.3.0",
+    "grunt-usemin": "~0.1.12",
+    "matchdep": "~0.1.2"
+  }
+}
