@@ -229,6 +229,53 @@ namespace spark {
       result.normalise();
       return result;
     }
+
+    /** Checks if the two vectors have identical components. */
+    bool operator==(const Vector3& other) const
+    {
+      return x == other.x && y == other.y && z == other.z;
+    }
+
+    /** Checks if the two vectors have non-identical components. */
+    bool operator!=(const Vector3& other) const
+    {
+      return !(*this == other);
+    }
+    
+    /**
+     * Checks if this vector is component-by-component less than
+     * the other.
+     *
+     * !(a < b) does not imply (b >= a).
+     */
+     bool operator<(const Vector3& other) const
+     {
+       return x < other.x && y < other.y && z < other.z;
+     }
+
+     /**
+      * Checks if this vector is component-by-component greater than
+      * the other.
+      */
+     bool operator>(const Vector3& other) const
+     {
+       return x > other.x && y > other.y && z > other .z;
+     }
+
+     /** Zero all the components of the vector. */
+     void clear() 
+     {
+       x = y = z = 0;
+     }
+
+     /** Flips all the components of the vector. */
+     void invert()
+     {
+       x = -x;
+       y = -y;
+       z = -z;
+     }
+
   };
 
 }
